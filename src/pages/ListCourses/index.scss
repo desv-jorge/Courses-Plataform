@@ -61,3 +61,39 @@ li{
 
     }
 }
+
+@media (max-width: 768px) {
+    li {
+        div {
+            flex-direction: column;  // Stack items vertically on smaller screens
+            padding: 10px; // Add padding for better spacing
+            
+            p {
+                font-size: 20px; // Reduce font size on smaller screens
+            }
+
+            .button {
+                height: 35px;
+                width: 35px; // Adjust button size for smaller screens
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        div {
+            width: 95%;
+            padding-left: 8px; // Adjust padding for mobile screens
+
+            p {
+                font-size: 14px; // Further reduce font size for very small screens
+            }
+
+            .button {
+                height: 30px;
+                width: 30px; // Further reduce button size for mobile screens
+            }
+        }
+    }
+}
