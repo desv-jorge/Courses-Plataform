@@ -65,6 +65,7 @@ li{
 @media (max-width: 768px) {
     li {
         div {
+            width: 96%;
             flex-direction: column;  // Stack items vertically on smaller screens
             padding: 10px; // Add padding for better spacing
             
