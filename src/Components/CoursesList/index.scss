@@ -1,0 +1,21 @@
+section{
+    padding: 10px;
+    // padding-left: 15px;
+    background-color: #171717;
+    width: 100%;
+    height: 1200px;
+    ul{
+        padding-left: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        list-style-type: none;
+    }
+    @media (max-width: 768px){
+        ul{
+            grid-template-columns: repeat(1, 1fr);
+            margin-right: 10px;
+        }
+    }
+}
