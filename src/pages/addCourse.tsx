@@ -5,8 +5,6 @@ import Link from "next/link";
 import axios from "axios";
 import Course from "../app/model";
 import CoursesAddList from "./ListCourses"
-import { text } from "stream/consumers";
-import { CiTextAlignCenter } from "react-icons/ci";
 
 export default function Teste() {
     const [formData, setFormData] = useState<Course>({
@@ -66,7 +64,7 @@ export default function Teste() {
     }
 
     try {
-      const response = await axios.post("http://localhost:3001/", formData);
+      const response = await axios.post("https://courses-plataform.onrender.com/", formData);
 
       setSubmittedData((prev) => [...prev, formData]);
 

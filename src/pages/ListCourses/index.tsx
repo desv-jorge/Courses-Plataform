@@ -12,7 +12,7 @@ export default function CoursesAddList() {
   // Função para buscar os cursos
   const fetchCourses = () => {
     axios
-      .get("http://localhost:3001/")
+      .get("https://courses-plataform.onrender.com/")
       .then((res) => {
         if (Array.isArray(res.data)) {
           const formattedCourses = res.data.map((course: any) => ({
@@ -44,7 +44,7 @@ export default function CoursesAddList() {
     }
 
     axios
-      .delete(`http://localhost:3001/${id}`)
+      .delete(`https://courses-plataform.onrender.com/${id}`)
       .then(() => {
         setMessage("Curso apagado com sucesso.");
         // Atualiza a lista após excluir

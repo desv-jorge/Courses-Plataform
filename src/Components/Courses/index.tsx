@@ -9,7 +9,7 @@ export default function Courses() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/')
+      .get('https://courses-plataform.onrender.com/')
       .then((res) => {
         console.log(res.data);
 
