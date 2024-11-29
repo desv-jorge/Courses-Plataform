@@ -1,3 +1,18 @@
+require('dotenv').config(); // No início do arquivo
+
+const port = process.env.PORT || 3001;
+const mongoURI = process.env.MONGO_URI;
+
+mongoose.connect(mongoURI).then(() => {
+    console.log("MongoDB connected");
+}).catch((error) => {
+    console.log("Error connecting to MongoDB: ", error);
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -5,7 +20,6 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors());
-const port = 3001;
 
 
 const Course = mongoose.model('Courses', {
@@ -49,11 +63,3 @@ app.put("/:id", async(req, res)=>{
     })
     return res.send(course)
 })
-
-app.listen(port, ()=> {
-    try{
-        mongoose.connect('mongodb+srv://JORGE:dnwEOBcWfowp3ti3@users.eex4ctv.mongodb.net/?retryWrites=true&w=majority&appName=Users')
-    }catch(erro){
-        console.log(erro)
-    }
-    console.log("tá rodando")})
