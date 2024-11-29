@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'No build step needed'",
     "dev": "node src/index.js"
   },
   "author": "Jorge",
