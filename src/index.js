@@ -1,4 +1,4 @@
-require('dotenv').config(); // No início do arquivo
+require('dotenv').config();
 
 const port = process.env.PORT || 3001;
 const mongoURI = process.env.MONGO_URI;
