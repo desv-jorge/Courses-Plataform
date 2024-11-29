@@ -43,7 +43,7 @@
     }
   
     @media (max-width: 480px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(3, 1fr);
       h1 {
         font-size: 18px;
       }
@@ -138,7 +138,7 @@
   
     @media (max-width: 480px) {
       .divForm {
-        width: 250px;
+        width: 400px;
   
         form div input {
           width: 90%;
