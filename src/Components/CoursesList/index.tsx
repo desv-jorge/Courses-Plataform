@@ -1,5 +1,6 @@
 import "./index.scss"
 import Courses from "../Courses"
+import { Footer } from "../Footer"
 
 export default function CoursesList(){
 
@@ -9,6 +10,7 @@ export default function CoursesList(){
             <ul>
                 <Courses/>
             </ul>
+            <Footer/>
         </section>
     )
 }

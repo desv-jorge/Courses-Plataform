@@ -4,7 +4,8 @@ import { FaHome } from "react-icons/fa";
 import Link from "next/link";
 import axios from "axios";
 import Course from "../app/model";
-import CoursesAddList from "./ListCourses"
+import CoursesAddList from "../Components/ListCourses"
+import { Footer } from "@/Components/Footer";
 
 export default function Teste() {
     const [formData, setFormData] = useState<Course>({
@@ -159,6 +160,7 @@ export default function Teste() {
                 <CoursesAddList/>
             </div>
       </div>
+      <Footer/>
     </div>
   );
 }

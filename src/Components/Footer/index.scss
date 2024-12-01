@@ -1,0 +1,40 @@
+:root {
+    --main-color: #d7903a;
+  }
+  
+  .footer {
+    text-align: center;
+    width: 100%;
+    .share {
+      padding: 1rem 0;
+      width: 100%;
+      a {
+        display: inline-block;
+        
+        img {
+          margin: 0.3rem;
+          cursor: pointer;
+          border-radius: 50%;
+          padding: 0.5rem;
+          width: 80px;   
+          height: 80px; 
+  
+          &:hover {
+            background: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    @media (max-width: 767px){
+      font-size: 2rem;
+    }
+  }
+  
