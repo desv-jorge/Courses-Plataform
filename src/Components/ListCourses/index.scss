@@ -49,9 +49,13 @@ li{
                 background-color: rgb(192, 196, 195);
             }
             #icon{
+                
                 width: 100%;
                 height: 70%;
-    
+                transition: 0.3s;
+                &:hover{
+                    color: #ff4d4d;
+                }
             }
         }
         div{

@@ -93,7 +93,9 @@
       background-color: #5c5c5c;
       border-radius: 20px;
       @media(max-width: 480px){
+        background-color: transparent;
         border-radius: 0;
+        width: 90%;
       }
       form {
         width: 80%;
@@ -110,6 +112,9 @@
             border: none;
             width: 98%;
             height: 20px;
+            @media(max-width: 480px){
+              width: 100%;
+            }
           }
         }
   
@@ -141,7 +146,7 @@
   
     @media (max-width: 480px) {
       .divForm {
-        width: 400px;
+        width:90%;
   
         form div input {
           width: 90%;
@@ -155,12 +160,15 @@
     align-items: start;
     gap: 10px;
   
+    @media (max-width: 480px) {
+      width: 90%;
+    }
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
     }
-  }
-  
+}
+
   #listaDiv {
     display: flex;
     flex-direction: column;
@@ -174,6 +182,7 @@
       h1{
         font-size: 24px;
       }
+      margin-left: 2px;
       width: 100%;
       border-radius: 0;
     }
