@@ -106,7 +106,7 @@ export default function Teste() {
       console.log("Dados para enviar:", newCourse);
 
       // Envia os dados para a API no localhost:3001
-      const response = await axios.post("http://localhost:3001/", newCourse);
+      const response = await axios.post("https://courses-plataform.onrender.com/", newCourse);
 
       setSubmittedData((prev) => [...prev, newCourse]);
 
