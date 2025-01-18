@@ -24,10 +24,10 @@ export default function Courses() {
       })
       .catch((error) => console.error("Erro na requisição:\n", error));
   }, []);
-
-  useEffect(()=>{
-    axios.get("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5294954752211324/crossorigin?anonymous")
-  })
+  //não descomente
+  // useEffect(()=>{
+  //   axios.get("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5294954752211324/crossorigin?anonymous")
+  // })
 
   if (courses.length === 0) {
     return <p style={{ color: "white" }}>Carregando cursos...</p>;
